@@ -47,7 +47,18 @@ function checkGameOver() {
     winningPositions.forEach((position) => {
         if ((gameGrid[position[0]] !== "" || gameGrid[position[1]] !== "" || gameGrid[position[2]] !== "")
            && (gameGrid[position[0]] === gameGrid[position[1]]) && (gameGrid[position[1]] === gameGrid[position[2]])) {
-
+            
+            //check if winneer is X
+            if(gameGrid[position[0]] === "X"){
+                answer = "X";
+            }
+            else{
+                answer = "O";
+            }
+            //now we know X/O is a winner
+            boxes[position[0].classList.add("win")];
+            boxes[position[1].classList.add("win")];
+            boxes[position[2].classList.add("win")];
         }
     })
 }
