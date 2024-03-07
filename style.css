@@ -37,3 +37,11 @@
     grid-template-columns: repeat(3,1fr);
     aspect-ratio: 1/1;
 }
+
+.box{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    font-size: 3rem;
+}
