@@ -44,4 +44,8 @@
     aspect-ratio: 1/1;
     cursor: pointer;
     font-size: 3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
