@@ -60,7 +60,9 @@ function checkGameOver() {
             boxes[position[1].classList.add("win")];
             boxes[position[2].classList.add("win")];
         }
-    })
+    });
+
+    //it means we have a winner
 }
 
 function handleClick(index){
