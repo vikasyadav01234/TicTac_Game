@@ -28,6 +28,9 @@ function handleClick(index){
     if(gameGrid[index] === "" ) {
         boxes[index].innerText = currentPlayer;
         gameGrid[index] = currentPlayer;
+        //swap karo turn ko
+        swapTurn();
+        //check koi jeet tho nhi gya
     }
 }
 
