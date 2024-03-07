@@ -42,7 +42,14 @@ function swapTurn(){
 
 function checkGameOver() {
     newGameBtn.classList.add("active");
-        
+    let answer = "";
+    //all 3 boxes should be non-empty and exactly same in value
+    winningPositions.forEach((position) => {
+        if ((gameGrid[position[0]] !== "" || gameGrid[position[1]] !== "" || gameGrid[position[2]] !== "")
+           && (gameGrid[position[0]] === gameGrid[position[1]]) && (gameGrid[position[1]] === gameGrid[position[2]])) {
+
+        }
+    })
 }
 
 function handleClick(index){
