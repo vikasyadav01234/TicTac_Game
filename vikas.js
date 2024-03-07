@@ -23,3 +23,9 @@ function initGame() {
     gameInfo.innerText = `Current Player - ${currentPlayer}`;
 }
 initGame();
+
+boxes.forEach((box, index) => {
+    box.addEventListener("click", () => {
+        handleClick(index);
+    })
+})
