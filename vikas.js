@@ -31,6 +31,7 @@ function handleClick(index){
         //swap karo turn ko
         swapTurn();
         //check koi jeet tho nhi gya
+        checkGameOver();
     }
 }
 
