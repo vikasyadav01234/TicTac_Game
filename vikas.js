@@ -1,6 +1,6 @@
 const boxes = document.querySelectorAll(".box");
-const gameInfo = document.querySelectorAll(".game-info");
-const newGameBtn = document.querySelectorAll(".btn");
+const gameInfo = document.querySelector(".game-info");
+const newGameBtn = document.querySelector(".btn");
 
 let currentPlayer;
 let gameGrid;
