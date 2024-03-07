@@ -24,6 +24,17 @@ function initGame() {
 }
 initGame();
 
+function swapTurn(){
+    if (currentPlayer === "X"){
+        currentPlayer = "O";
+    }
+    else{
+        currentPlayer = "X";
+    }
+    //UI Update
+    gameInfo.innerText = `Current Player - ${currentPlayer}`
+}
+
 function handleClick(index){
     if(gameGrid[index] === "" ) {
         boxes[index].innerText = currentPlayer;
