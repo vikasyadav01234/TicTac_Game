@@ -24,6 +24,13 @@ function initGame() {
 }
 initGame();
 
+function handleClick(index){
+    if(gameGrid[index] === "" ) {
+        boxes[index].innerText = currentPlayer;
+        gameGrid[index] = currentPlayer;
+    }
+}
+
 boxes.forEach((box, index) => {
     box.addEventListener("click", () => {
         handleClick(index);
