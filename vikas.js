@@ -16,3 +16,9 @@ const winningPositions =[
     [2,4,6]
 ];
 
+function initGame() {
+    currentPlayer = "X";
+    gameGrid = ["","","","","","","","",""];
+    newGameBtn.classList.remove("active");
+    gameInfo.innerText = `Current Player - ${currentPlayer}`;
+}
