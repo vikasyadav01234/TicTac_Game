@@ -35,6 +35,10 @@ function swapTurn(){
     gameInfo.innerText = `Current Player - ${currentPlayer}`
 }
 
+function checkGameOver() {
+    
+}
+
 function handleClick(index){
     if(gameGrid[index] === "" ) {
         boxes[index].innerText = currentPlayer;
@@ -51,4 +55,6 @@ boxes.forEach((box, index) => {
     box.addEventListener("click", () => {
         handleClick(index);
     })
-})
+});
+
+newGameBtn.addEventListener("click", initGame);
