@@ -89,7 +89,7 @@ function checkGameOver() {
 
     //board is Filled, game is TIE
     if(fillCount === 9) {
-        gameInfo.innerText = "Game Tied !";
+        gameInfo.innerText = "Game Tied ⚠️!";
         newGameBtn.classList.add("active");
     }
 
